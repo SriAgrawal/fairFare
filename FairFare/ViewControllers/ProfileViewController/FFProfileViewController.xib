@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nexa Bold.otf">
+            <string>NexaBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FFProfileViewController">
+            <connections>
+                <outlet property="editBtn" destination="igk-JE-N7Y" id="rUh-Ya-m3h"/>
+                <outlet property="profileTableView" destination="S8K-N2-MzU" id="Mwu-Mw-FMW"/>
+                <outlet property="saveBtn" destination="Fic-FZ-ZmM" id="xSr-fE-5iS"/>
+                <outlet property="userProfileImageView" destination="lJu-CM-zLl" id="LZ2-nf-NyL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63S-i9-eGZ">
+                    <rect key="frame" x="65" y="20" width="64" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="64" id="Xm3-oI-v5t"/>
+                        <constraint firstAttribute="height" constant="40" id="jsg-WQ-cTP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
+                    <color key="textColor" red="0.32272708420000001" green="0.40524643659999998" blue="0.45512044429999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ivi-wH-lGu">
+                    <rect key="frame" x="15" y="20" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="2fE-Qw-RnF"/>
+                        <constraint firstAttribute="height" constant="40" id="GJX-Bd-dNW"/>
+                    </constraints>
+                    <state key="normal" image="back"/>
+                    <connections>
+                        <action selector="backBtnAction:" destination="-1" eventType="touchUpInside" id="wmc-z9-5Ly"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igk-JE-N7Y">
+                    <rect key="frame" x="544" y="20" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="AIi-gz-6Ft"/>
+                        <constraint firstAttribute="width" constant="36" id="duH-RM-K0S"/>
+                    </constraints>
+                    <state key="normal" image="edit"/>
+                    <connections>
+                        <action selector="editBtnAction:" destination="-1" eventType="touchUpInside" id="iEf-Vt-oAu"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="S8K-N2-MzU" customClass="TPKeyboardAvoidingTableView">
+                    <rect key="frame" x="0.0" y="64" width="600" height="532"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <view key="tableHeaderView" contentMode="scaleToFill" id="rTR-Da-QM1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="140"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="lJu-CM-zLl">
+                                <rect key="frame" x="250" y="20" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="CIt-vc-EtI"/>
+                                    <constraint firstAttribute="width" constant="100" id="CkX-72-TGF"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IYV-IJ-1o2">
+                                <rect key="frame" x="250" y="20" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="1f1-eH-zoA"/>
+                                    <constraint firstAttribute="width" constant="100" id="MH9-Xs-PIu"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="camerBtnAction:" destination="-1" eventType="touchUpInside" id="af7-Wp-aB5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lJu-CM-zLl" firstAttribute="top" secondItem="rTR-Da-QM1" secondAttribute="top" constant="20" id="Wy6-30-n3h"/>
+                            <constraint firstItem="IYV-IJ-1o2" firstAttribute="centerX" secondItem="rTR-Da-QM1" secondAttribute="centerX" id="aos-oO-vGa"/>
+                            <constraint firstItem="IYV-IJ-1o2" firstAttribute="top" secondItem="rTR-Da-QM1" secondAttribute="top" constant="20" id="hD0-8f-Zy5"/>
+                            <constraint firstItem="lJu-CM-zLl" firstAttribute="centerX" secondItem="rTR-Da-QM1" secondAttribute="centerX" id="wCq-4n-Y2Q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Mg3-AI-D6Q"/>
+                        <outlet property="delegate" destination="-1" id="tHw-qk-lUI"/>
+                    </connections>
+                </tableView>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fic-FZ-ZmM">
+                    <rect key="frame" x="544" y="25" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="6Rm-Ec-rV5"/>
+                        <constraint firstAttribute="height" constant="36" id="n3J-gz-Ywe"/>
+                    </constraints>
+                    <state key="normal" image="save-icon"/>
+                    <connections>
+                        <action selector="saveBtnAction:" destination="-1" eventType="touchUpInside" id="g4a-EP-yc5"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Ivi-wH-lGu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="D7T-lg-BQw"/>
+                <constraint firstItem="Ivi-wH-lGu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="DFy-RF-LHF"/>
+                <constraint firstItem="63S-i9-eGZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="I3w-Jl-rvq"/>
+                <constraint firstAttribute="bottom" secondItem="S8K-N2-MzU" secondAttribute="bottom" constant="4" id="I9O-xr-fue"/>
+                <constraint firstAttribute="trailing" secondItem="Fic-FZ-ZmM" secondAttribute="trailing" constant="20" id="Lir-2S-XZr"/>
+                <constraint firstItem="igk-JE-N7Y" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="NXe-Pl-1qg"/>
+                <constraint firstItem="Fic-FZ-ZmM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="25" id="at1-QP-KVH"/>
+                <constraint firstItem="63S-i9-eGZ" firstAttribute="leading" secondItem="Ivi-wH-lGu" secondAttribute="trailing" constant="10" id="knO-1w-Tld"/>
+                <constraint firstAttribute="trailing" secondItem="S8K-N2-MzU" secondAttribute="trailing" id="mia-yg-1ne"/>
+                <constraint firstItem="S8K-N2-MzU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rhY-Ff-f13"/>
+                <constraint firstItem="S8K-N2-MzU" firstAttribute="top" secondItem="Ivi-wH-lGu" secondAttribute="bottom" constant="4" id="rpG-PS-zX7"/>
+                <constraint firstAttribute="trailing" secondItem="igk-JE-N7Y" secondAttribute="trailing" constant="20" id="sh6-mr-nuG"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back" width="24" height="14"/>
+        <image name="edit" width="36" height="35"/>
+        <image name="profile_placeholder" width="70" height="70"/>
+        <image name="save-icon" width="18" height="18"/>
+    </resources>
+</document>

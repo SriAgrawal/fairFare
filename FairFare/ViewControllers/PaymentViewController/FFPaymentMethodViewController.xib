@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nexa Bold.otf">
+            <string>NexaBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FFPaymentMethodViewController">
+            <connections>
+                <outlet property="footerView" destination="Hno-kB-26r" id="maD-mR-fDT"/>
+                <outlet property="paymentTableView" destination="vhN-qv-yWd" id="Jn3-Sl-deR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ClY-iD-riD">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment Methods" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnc-fi-koh">
+                            <rect key="frame" x="60" y="20" width="137" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="O8b-0S-5V2"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
+                            <color key="textColor" red="0.32079368829727173" green="0.40247422456741333" blue="0.45424729585647583" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SbL-1o-iiE">
+                            <rect key="frame" x="10" y="20" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="BVu-ZS-aGs"/>
+                                <constraint firstAttribute="width" constant="40" id="ivt-uc-rYw"/>
+                            </constraints>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="6" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" image="cross"/>
+                            <connections>
+                                <action selector="backButtonAction:" destination="-1" eventType="touchUpInside" id="czg-kz-iOi"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="tnc-fi-koh" firstAttribute="top" secondItem="ClY-iD-riD" secondAttribute="top" constant="20" id="3qU-Th-Kxt"/>
+                        <constraint firstItem="tnc-fi-koh" firstAttribute="leading" secondItem="SbL-1o-iiE" secondAttribute="trailing" constant="10" id="7xV-c3-WSM"/>
+                        <constraint firstItem="SbL-1o-iiE" firstAttribute="leading" secondItem="ClY-iD-riD" secondAttribute="leading" constant="10" id="9zR-j9-9oG"/>
+                        <constraint firstItem="SbL-1o-iiE" firstAttribute="top" secondItem="ClY-iD-riD" secondAttribute="top" constant="20" id="Cmx-wW-01C"/>
+                        <constraint firstAttribute="height" constant="64" id="o4k-mx-fGh"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vhN-qv-yWd">
+                    <rect key="frame" x="0.0" y="65" width="375" height="602"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ihx-q2-1Vc"/>
+                        <outlet property="delegate" destination="-1" id="kmU-5U-QEY"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="vhN-qv-yWd" secondAttribute="trailing" id="Dld-7e-cfz"/>
+                <constraint firstItem="vhN-qv-yWd" firstAttribute="top" secondItem="ClY-iD-riD" secondAttribute="bottom" constant="1" id="Guw-ZB-sg3"/>
+                <constraint firstItem="vhN-qv-yWd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="NfR-7q-XbJ"/>
+                <constraint firstAttribute="bottom" secondItem="vhN-qv-yWd" secondAttribute="bottom" id="PXM-CD-vFS"/>
+                <constraint firstItem="ClY-iD-riD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Uui-k6-HpO"/>
+                <constraint firstItem="ClY-iD-riD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fr2-Fm-II7"/>
+                <constraint firstAttribute="trailing" secondItem="ClY-iD-riD" secondAttribute="trailing" id="hVv-HW-TGC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+        <view contentMode="scaleToFill" id="Hno-kB-26r">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SHU-3T-Lap">
+                    <rect key="frame" x="16" y="19" width="113" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="n7X-LD-7ky"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="113" id="plZ-1K-CgU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
+                    <state key="normal" title="Add New Card">
+                        <color key="titleColor" red="0.1803966760635376" green="0.50382137298583984" blue="0.7254827618598938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="addNewCardBtnAction:" destination="-1" eventType="touchUpInside" id="kix-f7-k2s"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Whz-2b-ce8">
+                    <rect key="frame" x="15" y="55" width="360" height="1"/>
+                    <color key="backgroundColor" red="0.89047926659999999" green="0.89012545350000005" blue="0.8984447122" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="RCF-xW-HqX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.89047926659999999" green="0.89012545350000005" blue="0.8984447122" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="SHU-3T-Lap" firstAttribute="top" secondItem="Hno-kB-26r" secondAttribute="top" constant="19" id="is3-NH-ao8"/>
+                <constraint firstItem="Whz-2b-ce8" firstAttribute="leading" secondItem="Hno-kB-26r" secondAttribute="leading" constant="15" id="rFC-bc-N6q"/>
+                <constraint firstItem="Whz-2b-ce8" firstAttribute="top" secondItem="SHU-3T-Lap" secondAttribute="bottom" constant="6" id="u80-Vu-NVt"/>
+                <constraint firstAttribute="trailing" secondItem="Whz-2b-ce8" secondAttribute="trailing" id="ukp-Uy-3UV"/>
+                <constraint firstItem="SHU-3T-Lap" firstAttribute="leading" secondItem="Hno-kB-26r" secondAttribute="leading" constant="16" id="yiM-v8-Wo0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="465.5" y="-116.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cross" width="16" height="16"/>
+    </resources>
+</document>

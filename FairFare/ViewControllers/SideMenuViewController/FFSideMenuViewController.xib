@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="sf-san-francisco-ui-text-regular-5983ebaa795af.otf">
+            <string>SFUIText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FFSideMenuViewController">
+            <connections>
+                <outlet property="avtarImgView" destination="leh-x1-QoY" id="ZNB-bx-t0c"/>
+                <outlet property="headerView" destination="47d-Av-3pF" id="11y-eP-bAc"/>
+                <outlet property="historyCountLbl" destination="aLo-mw-ptR" id="Q6J-kP-8tp"/>
+                <outlet property="menuTableView" destination="GGZ-nf-HmB" id="F8e-qA-iFS"/>
+                <outlet property="nameLbl" destination="KfZ-AG-cDY" id="dUr-Af-gS6"/>
+                <outlet property="savedMoneyLbl" destination="A3O-zn-wyh" id="gsb-Rd-JJw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GGZ-nf-HmB">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.28476911783218384" green="0.65007698535919189" blue="0.80851686000823975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="GGZ-nf-HmB" secondAttribute="trailing" id="440-bx-I1M"/>
+                <constraint firstAttribute="bottom" secondItem="GGZ-nf-HmB" secondAttribute="bottom" id="Idn-iz-HNX"/>
+                <constraint firstItem="GGZ-nf-HmB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="V80-5z-Q6F"/>
+                <constraint firstItem="GGZ-nf-HmB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ylK-x6-NmM"/>
+            </constraints>
+            <point key="canvasLocation" x="-1.5" y="-76.5"/>
+        </view>
+        <view contentMode="scaleToFill" id="47d-Av-3pF">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="leh-x1-QoY">
+                    <rect key="frame" x="35" y="50" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="Xgf-EP-PuH"/>
+                        <constraint firstAttribute="height" constant="70" id="v1y-sP-Z65"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="35"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KfZ-AG-cDY">
+                    <rect key="frame" x="120" y="50" width="0.0" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="VOM-Nd-NRF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLo-mw-ptR">
+                    <rect key="frame" x="120" y="75" width="0.0" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="o8w-ig-3Ag"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0 saved" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3O-zn-wyh">
+                    <rect key="frame" x="120" y="99" width="56" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="BLW-Rm-SOs"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVI-ZI-nDL">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                    <connections>
+                        <action selector="profileButtonAction:" destination="-1" eventType="touchUpInside" id="Ea9-Ad-erD"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.28476911780000003" green="0.65007698540000003" blue="0.80851686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="GVI-ZI-nDL" firstAttribute="top" secondItem="47d-Av-3pF" secondAttribute="top" id="1In-Vt-tKU"/>
+                <constraint firstItem="GVI-ZI-nDL" firstAttribute="leading" secondItem="47d-Av-3pF" secondAttribute="leading" id="2UP-Qo-dEF"/>
+                <constraint firstItem="aLo-mw-ptR" firstAttribute="leading" secondItem="leh-x1-QoY" secondAttribute="trailing" constant="15" id="GP0-m0-pl4"/>
+                <constraint firstAttribute="bottom" secondItem="GVI-ZI-nDL" secondAttribute="bottom" id="IBB-47-30h"/>
+                <constraint firstItem="GVI-ZI-nDL" firstAttribute="top" secondItem="47d-Av-3pF" secondAttribute="top" id="LNR-xA-yvY"/>
+                <constraint firstItem="GVI-ZI-nDL" firstAttribute="leading" secondItem="47d-Av-3pF" secondAttribute="leading" id="RcM-Ke-Ctf"/>
+                <constraint firstAttribute="trailing" secondItem="GVI-ZI-nDL" secondAttribute="trailing" id="SP6-y7-eAd"/>
+                <constraint firstItem="aLo-mw-ptR" firstAttribute="top" secondItem="KfZ-AG-cDY" secondAttribute="bottom" constant="4" id="Tez-ER-0oG"/>
+                <constraint firstItem="A3O-zn-wyh" firstAttribute="leading" secondItem="leh-x1-QoY" secondAttribute="trailing" constant="15" id="XRw-3a-eNG"/>
+                <constraint firstAttribute="bottom" secondItem="GVI-ZI-nDL" secondAttribute="bottom" id="b5x-xf-GMq"/>
+                <constraint firstItem="leh-x1-QoY" firstAttribute="leading" secondItem="47d-Av-3pF" secondAttribute="leading" constant="35" id="bfI-yO-aCe"/>
+                <constraint firstItem="KfZ-AG-cDY" firstAttribute="leading" secondItem="leh-x1-QoY" secondAttribute="trailing" constant="15" id="iTb-tl-B9Q"/>
+                <constraint firstItem="A3O-zn-wyh" firstAttribute="top" secondItem="aLo-mw-ptR" secondAttribute="bottom" constant="3" id="k2B-mC-LHv"/>
+                <constraint firstItem="KfZ-AG-cDY" firstAttribute="top" secondItem="47d-Av-3pF" secondAttribute="top" constant="50" id="pyB-cx-8bE"/>
+                <constraint firstItem="leh-x1-QoY" firstAttribute="top" secondItem="47d-Av-3pF" secondAttribute="top" constant="50" id="ud5-UW-pEx"/>
+                <constraint firstAttribute="trailing" secondItem="GVI-ZI-nDL" secondAttribute="trailing" id="vdE-Ua-Fca"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="438.5" y="-106"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="profile_placeholder" width="70" height="70"/>
+    </resources>
+</document>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FairFare/ViewControllers/RiderListViewController/FFRequestForRideVC.m"
+            timestampString = "525160977.304618"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "545"
+            endingLineNumber = "545"
+            landmarkName = "-callWebApiToCancelLyftRide"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FairFare/ViewControllers/RiderListViewController/FFRequestForRideVC.m"
+            timestampString = "525160977.304618"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "753"
+            endingLineNumber = "753"
+            landmarkName = "-callpopToHome"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[FFRequestForRideVC callpopToHome]"
+                  moduleName = "FairFare"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shridharagarwal/Desktop/FairFareApp@24Aug/FairFare/ViewControllers/RiderListViewController/FFRequestForRideVC.m"
+                  timestampString = "525163228.979152"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "755"
+                  endingLineNumber = "755"
+                  offsetFromSymbolStart = "55">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[FFRequestForRideVC callpopToHome]"
+                  moduleName = "FairFare"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shridharagarwal/Desktop/FairFareApp@24Aug/FairFare/ViewControllers/RiderListViewController/FFRequestForRideVC.m"
+                  timestampString = "525163228.982315"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "755"
+                  endingLineNumber = "755"
+                  offsetFromSymbolStart = "65">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FairFare/ViewControllers/RiderListViewController/FFRequestForRideVC.m"
+            timestampString = "525160977.304618"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "742"
+            endingLineNumber = "742"
+            landmarkName = "-callWebApiToCancelRide"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[FFRequestForRideVC callWebApiToCancelRide]"
+                  moduleName = "FairFare"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shridharagarwal/Desktop/FairFareApp@24Aug/FairFare/ViewControllers/RiderListViewController/FFRequestForRideVC.m"
+                  timestampString = "525163228.989837"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "742"
+                  endingLineNumber = "742"
+                  offsetFromSymbolStart = "58">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__44-[FFRequestForRideVC callWebApiToCancelRide]_block_invoke"
+                  moduleName = "FairFare"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shridharagarwal/Desktop/FairFareApp@24Aug/FairFare/ViewControllers/RiderListViewController/FFRequestForRideVC.m"
+                  timestampString = "525163228.993179"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "742"
+                  endingLineNumber = "742"
+                  offsetFromSymbolStart = "33">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FairFare/ViewControllers/RiderListViewController/FFRequestForRideVC.m"
+            timestampString = "525160977.304618"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "724"
+            endingLineNumber = "724"
+            landmarkName = "-callWebApiToGetCurrentStatus"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__50-[FFRequestForRideVC callWebApiToGetCurrentStatus]_block_invoke"
+                  moduleName = "FairFare"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shridharagarwal/Desktop/FairFareApp@24Aug/FairFare/ViewControllers/RiderListViewController/FFRequestForRideVC.m"
+                  timestampString = "525163228.99976"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "724"
+                  endingLineNumber = "724"
+                  offsetFromSymbolStart = "7215">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__50-[FFRequestForRideVC callWebApiToGetCurrentStatus]_block_invoke.506"
+                  moduleName = "FairFare"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shridharagarwal/Desktop/FairFareApp@24Aug/FairFare/ViewControllers/RiderListViewController/FFRequestForRideVC.m"
+                  timestampString = "525163229.002935"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "724"
+                  endingLineNumber = "724"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FairFare/ViewControllers/RiderListViewController/FFRequestForRideVC.m"
+            timestampString = "525160977.304618"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "747"
+            endingLineNumber = "747"
+            landmarkName = "-callWebApiToCancelRide"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FairFare/ViewControllers/HomeViewController/FFHomeViewController.m"
+            timestampString = "525160050.299413"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "160"
+            endingLineNumber = "160"
+            landmarkName = "-customizeView"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FairFare/ViewControllers/RiderListViewController/FFRequestForRideVC.m"
+            timestampString = "525160960.593857"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "757"
+            endingLineNumber = "757"
+            landmarkName = "-callpopToHome"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

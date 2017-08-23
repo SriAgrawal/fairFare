@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FFComapreFareViewController">
+            <connections>
+                <outlet property="markerViewData" destination="iN0-l3-epB" id="pXh-ad-mpV"/>
+                <outlet property="pickUp" destination="dbS-Kf-ESl" id="bgw-yS-BBi"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="280" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cir1" translatesAutoresizingMaskIntoConstraints="NO" id="Cvd-4e-D8H">
+                    <rect key="frame" x="130" y="40" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="KrC-En-oqc"/>
+                        <constraint firstAttribute="width" constant="20" id="dwC-uI-GjS"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="co2-eX-7Pt">
+                    <rect key="frame" x="0.0" y="0.0" width="171" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbS-Kf-ESl">
+                            <rect key="frame" x="5" y="0.0" width="160" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="dbS-Kf-ESl" firstAttribute="top" secondItem="co2-eX-7Pt" secondAttribute="top" id="13J-fM-DPf"/>
+                        <constraint firstAttribute="width" constant="171" id="Xzi-XA-TaB"/>
+                        <constraint firstAttribute="trailing" secondItem="dbS-Kf-ESl" secondAttribute="trailing" constant="6" id="mp8-yp-gzl"/>
+                        <constraint firstAttribute="height" constant="40" id="n1m-xc-Eue"/>
+                        <constraint firstItem="dbS-Kf-ESl" firstAttribute="leading" secondItem="co2-eX-7Pt" secondAttribute="leading" constant="5" id="nbB-7j-YnJ"/>
+                        <constraint firstAttribute="bottom" secondItem="dbS-Kf-ESl" secondAttribute="bottom" id="vx3-c3-hjO"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sort-down" translatesAutoresizingMaskIntoConstraints="NO" id="cjU-MG-OT0">
+                    <rect key="frame" x="130" y="33" width="20" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="fs1-qt-gej"/>
+                        <constraint firstAttribute="width" constant="20" id="xoT-ZZ-Szt"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="co2-eX-7Pt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="40U-W9-bbc"/>
+                <constraint firstItem="Cvd-4e-D8H" firstAttribute="top" secondItem="co2-eX-7Pt" secondAttribute="bottom" id="Fwz-aw-KRa"/>
+                <constraint firstItem="Cvd-4e-D8H" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ief-nN-FaN"/>
+                <constraint firstItem="co2-eX-7Pt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="lQz-g2-uzu"/>
+                <constraint firstAttribute="bottom" secondItem="cjU-MG-OT0" secondAttribute="bottom" constant="5" id="sZU-GK-lby"/>
+                <constraint firstAttribute="bottom" secondItem="Cvd-4e-D8H" secondAttribute="bottom" id="yRy-xw-duz"/>
+                <constraint firstItem="cjU-MG-OT0" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ymf-j2-Lst"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="56" y="58"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cir1" width="22" height="22"/>
+        <image name="sort-down" width="23" height="23"/>
+    </resources>
+</document>
